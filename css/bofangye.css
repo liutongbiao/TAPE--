@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 100px
+}
+
+body {
+    font-size: 0.16rem;
+    font-family: 'PingFang-SC-Medium'
+}
+
+ul {
+    list-style-type: none;
+}
+
+#bofangye {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+#bofangye .title {
+    padding: 0 0.3rem;
+}
+
+#bofangye .title .top {
+    display: flex;
+    justify-content: space-between;
+    height: 0.73rem;
+    font-size: 0.34rem;
+    align-items: center;
+}
+
+#bofangye .title .top .fenxiang {
+    width: 0.37rem;
+    height: 0.37rem;
+    background: url('../imgs/分享.png') no-repeat center;
+    background-size: auto 0.35rem;
+}
+
+#bofangye .title .top .back {
+    font-family: '宋体';
+    font-weight: 600;
+    width: 0.5rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    background: url('../imgs/back.png') no-repeat center;
+    background-size: auto 0.3rem;
+
+}
+
+#bofangye .title .singer {
+    text-align: center;
+    font-size: 0.28rem;
+}
+
+#bofangye .content {
+    padding: 0 0.3rem;
+    position: relative;
+}
+
+#bofangye .content .cidai {
+    background: url('../imgs/图层1.png') no-repeat center;
+    background-size: 5.26rem 3.4rem;
+    width: 5.26rem;
+    height: 3.4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    position: relative;
+}
+
+#bofangye .content .cidai .zhuan {
+    position: absolute;
+    width: 3.6rem;
+    height: 0.62rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.49rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bofangye .content .cidai .zhuan span {
+    display: block;
+    height: 0.62rem;
+    width: 0.62rem;
+    background: url('../imgs/磁带齿轮.png') no-repeat center;
+    background-size: 100%;
+}
+
+#bofangye .content .songimg {
+    height: 1.75rem;
+    width: 1.8rem;
+    overflow: hidden;
+    background: red;
+    position: absolute;
+    top: 0.88rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.2rem;
+}
+
+#bofangye .content .songimg img {
+    width: 100%;
+    height: 100%;
+}
+
+#bofangye .content .songlrcone {
+    margin-top: 0.8rem;
+    height: 3.5rem;
+    width: 100%;
+    overflow-y:auto;
+    position: relative;
+}
+
+#bofangye .content .songlrcone .lrcbox{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+
+#bofangye .content .songlrcone p {
+    text-align: center;
+    line-height: 0.7rem;
+    height: 0.7rem;
+    font-size: 0.28rem;
+    /* color: rgb(224, 221, 221); */
+    color:#333;
+    opacity: 0.2;
+    overflow: hidden;
+}
+
+#bofangye .content .songlrcone p:nth-child(1),
+#bofangye .content .songlrcone p:nth-child(5) {
+    font-size: 0.28rem;
+    /* color: rgb(224, 221, 221);/ */
+   
+}
+
+#bofangye .content .songlrcone p:nth-child(2),
+#bofangye .content .songlrcone p:nth-child(4) {
+    font-size: 0.3rem;
+    /* color: #999; */
+}
+
+#bofangye .content .songlrcone p:nth-child(3) {
+    font-size: 0.36rem;
+    /* color: #333; */
+}
+
+#bofangye .fenyeqi {
+    height: 0.15rem;
+    width: 0.6rem;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bofangye .fenyeqi span {
+
+    width: 0.12rem;
+    height: 0.12rem;
+    display: inline-block;
+    border-radius: 50%;
+    border: #FF5858 0.02rem solid;
+}
+#bofangye .fenyeqi span.active{
+      background: #FF5858;
+}
+#bofangye .contrl{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   padding: 0 0.3rem;
+   width: 100%;
+   box-sizing: border-box;
+}
+#bofangye .contrl .top{
+    height: 0.44rem;
+    display: flex;
+    justify-content: space-around;
+}
+#bofangye .contrl .top>div{
+    height: 100%;
+    width: 0.83rem;
+}
+#bofangye .contrl .top>div:nth-child(1){
+    background: url('../imgs/点赞.png') no-repeat center;
+    background-size: auto 0.44rem;
+}
+#bofangye .contrl .top>div:nth-child(2){
+    background: url('../imgs/下载.png') no-repeat center;
+    background-size: auto 0.44rem;
+}
+#bofangye .contrl .top>div:nth-child(3){
+    background: url('../imgs/1W+.png') no-repeat center;
+    background-size: auto 0.44rem;
+}
+#bofangye .contrl .top>div:nth-child(4){
+    background: url('../imgs/更多.png') no-repeat center;
+    background-size: auto 0.44rem;
+}
+#bofangye .contrl .jindutiao{
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bofangye .contrl .jindutiao>p{
+    font-size: 0.24rem;
+    color:#666;
+}
+#bofangye .contrl .jindutiao .totalbgc{
+    width: 4.8rem;
+    height:0.06rem ;
+    background:#E1E1E1;
+    position: relative;
+}
+#bofangye .contrl .jindutiao .totalbgc .nowbgc{
+    width: 0rem;
+    height: 100%;
+    background: #FF5858;
+}
+#bofangye .contrl .jindutiao .totalbgc .dian{
+    width: 0.15rem;
+    height: 0.15rem;
+    background: #FF5858;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.045rem;
+    left: 0rem;
+}
+#bofangye .contrl .gongneng{
+   
+}
+#bofangye .contrl .gongneng ul{
+    height: 0.76rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+#bofangye .contrl .gongneng ul li{
+    width: 0.76rem;
+    height: 0.76rem;
+}
+#bofangye .contrl .gongneng ul li.moshi{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bofangye .contrl .gongneng ul li.moshi img{
+    height: 0.37rem;
+}
+#bofangye .contrl .gongneng ul li:nth-child(2){
+    background: url('../imgs/上一首.png') no-repeat center;
+    background-size:auto 0.44rem; 
+}
+#bofangye .contrl .gongneng ul li:nth-child(3){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+#bofangye .contrl .gongneng ul li:nth-child(3) img{
+    height: 0.69rem;
+}
+#bofangye .contrl .gongneng ul li:nth-child(4){
+    background: url('../imgs/下一首.png') no-repeat center;
+    background-size:auto 0.44rem; 
+}
+#bofangye .contrl .gongneng ul li:nth-child(5){
+    background: url('../imgs/模式.png') no-repeat center;
+    background-size:auto 0.35rem; 
+   
+}
+
+#bofangye .bofanglist{
+    height: 8rem;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    padding:0 0.3rem;
+    border: rgb(223, 221, 221) 0.02rem solid;
+    box-sizing: border-box;
+    border-radius:0.3rem 0.3rem 0 0; 
+    display: none;
+}
+#bofangye .bofanglist .header{
+    height: 0.86rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.32rem;
+}
+
+#bofangye .bofanglist .header .left{
+    width: 2.7rem;
+    text-align: right;
+    height: 100%;
+    line-height: 0.86rem;
+    background: url('../imgs/听歌模式.png') no-repeat left center;
+    background-size:auto 0.32rem;   
+}
+#bofangye .bofanglist .header .right{
+    width: 2.9rem;
+    text-align: right;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-indent: 0.6rem;
+    background: url('../imgs/shoucangjia.png') no-repeat left center;
+    background-size:auto 0.32rem; 
+}
+#bofangye .bofanglist .header .right .removeallsong{
+    background: url('../imgs/删除@2x.png') no-repeat right center;
+    background-size: 0.34rem auto;
+    height:90%;
+    width: 0.6rem;
+}
+#bofangye .bofanglist .bendisong{
+    height: 7rem;
+    overflow-y: auto;
+}
+#bofangye .bofanglist .bendisong li{
+    display: flex;
+    height: 0.69rem;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#bofangye .bofanglist .bendisong li .leftinfo{
+    display: flex;
+    align-items: center;
+}
+#bofangye .bofanglist .bendisong li .leftinfo .songname{
+    font-size: 0.28rem;
+    color: #333;
+}
+#bofangye .bofanglist .bendisong li .leftinfo .singer{
+    font-size: 0.24rem;
+    color: #666;
+}
+#bofangye .bofanglist .bendisong li .leftinfo p{
+    margin: 0 0.1rem;
+    color: #666;
+}
+#bofangye .bofanglist .bendisong li .removeone{
+    background: url('../imgs/reone.png') no-repeat center;
+    background-size: 0.23rem auto;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+#bofangye .bendilistzhezhao{
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 7, 7,0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    display: none;
+}

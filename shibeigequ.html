@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no,minimum-scale=1.0">
+    <title>音乐识别</title>
+    <link rel="stylesheet" href="css/shibiegequ.css">
+</head>
+
+<body>
+    <!--音乐识别-->
+    <div id="yinyueshibie">
+        <!--头部标题-->
+        <div class="shibie">
+            <img src="imgs/排行榜/返回@2x.png" alt="">
+            <p>听歌识曲</p>
+        </div>
+        <!--下级标题-->
+        <div class="title2">
+            <span>听歌识曲</span>
+            <span>哼唱识别</span>
+        </div>
+        <!--动画效果-->
+        <!--齿轮动画-->
+        <div class="lilun">
+            <img src="imgs/切图/大图标无齿轮@2x.png" alt="">
+            <!--轮子-->
+            <div class="lunzoi">
+                <span class="shut"></span>
+                <span class="shut"></span>
+
+            </div>
+        </div>
+        <div class="text">
+            <p>点击识别</p>
+            <span>离源音越近越容易识别</span>
+        </div>
+
+
+    </div>
+</body>
+<script src="js/zepto.min.js"></script>
+<script>
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+    $(document).on('swipeRight',function(){
+        window.location.href='index.html';
+    })
+    var yinyueshibieindex = 0;
+    var yinyueshibietimer = null;
+    var yinyueshibiebool = true;
+    var yinyueshibietime = null;
+    let yinyueshibiewt = 30;
+
+    $("#yinyueshibie .lilun img").click(function () {
+        yinyueshibiewt = 30;
+        yinyueshibiefn1(yinyueshibiebool);
+        yinyueshibiefn2();
+        
+    });
+
+
+    function yinyueshibiefn1(a) {
+        if (a) {
+            clearInterval(yinyueshibietimer);
+            yinyueshibietimer = setInterval(function () {
+                $("#yinyueshibie .text p").html('正在识别中... (' + yinyueshibiewt + 's)');
+                yinyueshibieindex++;
+                $("#yinyueshibie .lunzoi span").css({
+                    transform: "rotate(" + (yinyueshibieindex) + "deg)",
+                    // animate:"1 linear "
+                }, 1000)
+
+            })
+        } else {
+            clearInterval(yinyueshibietimer);
+            $("#yinyueshibie .text p").html('点击识别');
+        }
+        yinyueshibiebool = !yinyueshibiebool;
+    }
+
+
+    function yinyueshibiefn2() {
+        clearInterval(yinyueshibietime);
+        yinyueshibietime = setInterval(function () {
+            yinyueshibiewt--
+            yinyueshibiewt = yinyueshibiewt < 0 ? 0 : yinyueshibiewt;
+            if (yinyueshibiewt <= 0) {
+                $("#yinyueshibie .text p").html('识别已完成');
+                clearInterval(yinyueshibietimer);
+                clearInterval(yinyueshibietime);
+            }
+        }, 1000)
+    }
+    yinyueshibiefn2();
+</script>
+
+</html>

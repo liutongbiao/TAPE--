@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+
+html ,body{
+    width: 100%;
+    height: 100%;
+
+}
+/*首页内容*/
+#mydakai{
+    width: 6rem;
+    height: 100%;
+    background-color: #fdfdfd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translateX(-6.2rem);
+}
+#mydakai .imgs{
+    padding-left: 5.26rem;
+
+}
+#mydakai .imgs img{
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-top: 0.2rem;
+}
+#mydakai .imgs1{
+    padding-left: 0.3rem;
+}
+#mydakai .imgs1 img{
+    width: 0.84rem;
+    height: 0.84rem;
+}
+#mydakai .imgs1 .texthk{
+    display: flex;
+    align-items: center;
+}
+#mydakai .imgs1 .texthk p{
+    font-size: 0.28rem;
+}
+#mydakai .imgs1 .texthk span{
+    width: 0.7rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.22rem;
+    display: block;
+    border-radius: 0.15rem;
+    text-align: center;
+background-color: #E1E1E1;
+    color: white;
+     margin-left: 0.11rem;
+}
+#mydakai .imgs2{
+    display: flex;
+    margin-left: 4.16rem;
+    margin-top: -0.4rem;
+}
+#mydakai .imgs2 img{
+    width: 1.2rem;
+    height: 0.42rem;
+}
+#mydakai .ulst1{
+   padding-top: 0.15rem;
+}
+#mydakai .ulst1 ul{
+    display: flex;
+    text-align: center;
+    margin-left: -0.09rem;
+    margin-top: 0.3rem;
+    align-items: center;
+
+}
+#mydakai .ulst1 ul li{
+    margin-left: 0.4rem;
+}
+#mydakai .ulst1 ul li img{
+    width: 0.48rem;
+    height: 0.38rem;
+
+}
+#mydakai .ulst1 ul li:nth-of-type(2) img{
+    width: 0.44rem;
+    height: 0.46rem;
+}
+#mydakai .ulst1 ul li:nth-of-type(3) img{
+    width: 0.45rem;
+    height: 0.51rem;
+}
+#mydakai .ulst1 ul li:nth-of-type(4) img{
+    width: 0.59rem;
+    height: 0.48rem;
+}
+
+#mydakai .ulst1 ul li p{
+    font-size: 0.26rem;
+
+}
+#mydakai .kiref{
+     padding-left: 0.3rem;
+    padding-top: 0.4rem;
+}
+#mydakai .kiref div{
+    display: flex;
+    align-items: center;
+    padding-top: 0.45rem;
+}
+#mydakai .kiref div img{
+    width: 0.48rem;
+    height: 0.34rem;
+
+}
+#mydakai .kiref div:nth-of-type(2) img{
+    width: 0.39rem;
+    height: 0.44rem;
+    margin-left: 0.03rem;
+
+}
+
+#mydakai .kiref div:nth-of-type(3) img{
+    width: 0.43rem;
+    height: 0.46rem;
+
+}
+#mydakai .kiref div:nth-of-type(4) img{
+    width: 0.45rem;
+    height: 0.43rem;
+
+}
+#mydakai .kiref div:nth-of-type(5) img{
+    width: 0.44rem;
+    height: 0.44rem;
+
+}
+#mydakai .kiref div:nth-of-type(6) img{
+    width: 0.44rem;
+    height: 0.44rem;
+
+}
+#mydakai .kiref div:nth-of-type(7) img{
+    width: 0.41rem;
+    height: 0.45rem;
+    margin-left: 0.01rem;
+
+}
+#mydakai .kiref div:nth-of-type(8) img{
+    width: 0.43rem;
+    height: 0.47rem;
+
+}
+#mydakai .kiref div span{
+    font-size: 0.26rem;
+    padding-left: 0.17rem;
+}
+#mydakai .kiref div .d{
+    padding-left: 0.218rem;
+}
+#mycebianlan{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+    display: none;
+}
+#mycebianlan .cebianlanzhezhao{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(85, 84, 84, 0.5);
+   
+}

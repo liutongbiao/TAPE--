@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+
+}
+#diantai{
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+#diantai .banxin{
+    /*width: 90%;*/
+    margin: auto;
+    padding-left:  0.33rem;
+}
+#diantai .banxin .header{
+    display: flex;
+    margin-top: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+#diantai .banxin .header p{
+    font-size: 0.36rem;
+    /*font-family: 黑体;*/
+
+}
+#diantai .banxin .header p:nth-of-type(1)>img{
+   width: 0.18rem;
+
+}
+#diantai .banxin .header p:nth-of-type(2){
+    font-weight: 500;
+}
+#diantai .banxin .header p:nth-of-type(3){
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+/*<!--背景banner图-->*/
+#diantai .banner {
+    width: 7.5rem;
+    height: 2.72rem;
+    margin-left: -0.36rem;
+    background: url("../imgs/banner@2x.png");
+    background-size: cover;
+    margin-top: 0.3rem;
+    position: relative;
+}
+/*<!--搜索详情-->*/
+#diantai .banner .inp{
+    display: flex;
+   justify-content: center;
+}
+#diantai .banner span{
+    width: 0.3rem;
+    height: 0.3rem;
+    display: block;
+    position: absolute;
+    left: 1.3rem;
+    top: -0.47rem;
+}
+#diantai .banner span img{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+#diantai .banner .inp input{
+    width: 5.50rem;
+    height: 0.6rem;
+    background: white url('../imgs/搜索@2x.png') no-repeat 0.2rem center;
+    background-size: auto 0.3rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: none;
+    text-indent: 0.8rem;
+    margin-top: 0.15rem;
+}
+/*导航栏*/
+#diantai .ulst{
+ margin-left: -0.3rem;
+    margin-top: 0.48rem;
+}
+#diantai .ulst ul{
+display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#diantai .ulst ul li{
+font-size: 0.3rem;
+    color: rgb(51,51,51);
+}
+#diantai .ulst ul li:nth-of-type(1){
+    color: rgb(255,88,88);
+    font-size: 0.32rem;
+}
+/*24小时榜*/
+#diantai .banxin .hous{
+margin-top: 0.6rem;
+}
+#diantai .banxin .hous p{
+    font-size: 0.3rem;
+   text-align: center;
+   margin-left: -0.15rem;
+}
+#diantai .banxin .hous ul{
+    display: flex;
+   margin-left: -0.175rem;
+}
+#diantai .banxin .hous ul li{
+    width: 2.19rem;
+    height: 1.95rem;
+    margin-left: 0.16rem;
+     margin-top: 0.26rem;
+    border-radius: 0.2rem;
+}
+#diantai .banxin .hous ul li img{
+    width: 2.19rem;
+    height: 1.95rem;
+
+}
+/*热门主播*/
+#diantai .banxin .remenzhubo{
+margin-top: 0.8rem;
+ }
+#diantai .banxin .remenzhubo p{
+    font-size: 0.3rem;
+    text-align: center;
+    margin-left: -0.15rem;
+}
+#diantai .banxin .remenzhubo .zhubonierong{
+    /*display: flex;*/
+    margin-top: 0.56rem;
+}
+#diantai .banxin .remenzhubo .shuzi{
+display: flex;
+position: relative;
+}
+#diantai .banxin .remenzhubo .shuzi .imk{
+margin-left: -0.18rem;
+}
+#diantai .banxin .remenzhubo .shuzi .immg1{
+    position: absolute;
+    top:-0.3rem ;
+    left: 0.33rem;
+}
+#diantai .banxin .remenzhubo .shuzi p{
+
+   margin-left: 1.26rem;
+}
+#diantai .banxin .remenzhubo .zhubonierong .huomiao{
+    display: flex;
+   margin-left: 5.56rem;
+    margin-top: -0.5rem;
+
+}
+#diantai .banxin .remenzhubo .zhubonierong .huomiao img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+#diantai .banxin .remenzhubo .zhubonierong .huomiao span{
+    font-size: 0.28rem;
+     margin-top: 0.1rem;
+    margin-left:-0.03rem;
+color: grey;
+
+}

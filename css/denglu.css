@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    /* background: url("./denglu.img/9746d8a0bbb14581e84d9eec3e5b95d9.gif")no-repeat; */
+    background-size: 100%;
+}
+html{
+    font-size: 100px;
+}  
+#denglu{
+    width: 100%;
+    height: 100%;
+}
+#denglu>img{
+    display: block;
+    width: 1.7rem;
+    height: 1.35rem; 
+    margin: 2rem auto; 
+}
+
+#denglu>.center>input:nth-of-type(1){
+    width: 5rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 0.8rem;
+    border: 0px;
+    border-bottom: 0.1px solid rgb(109, 106, 106);
+    padding-left: 0.8rem;
+    color:blue;
+    font-size: 0.2rem;
+    outline: none;
+}
+#denglu>.center>input:nth-of-type(2){
+    width: 5rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 6rem;
+    left: 0.8rem;
+    border: 0px;
+    border-bottom: 0.1px solid rgb(109, 106, 106);
+    padding-left: 0.8rem;
+    color: blue;
+    font-size: 0.2rem;
+    outline: none;
+}
+#denglu>.center>.center-1{
+    font-size: 0.3rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.9rem;
+    top: 4.7rem;
+
+}
+#denglu>.center>.center-1>img{
+    width: 0.3rem;
+    height: 0.38rem;
+}
+#denglu>.center>.center-2{
+    font-size: 0.3rem;
+    position: absolute;
+    left: 0.9rem;
+    top: 6.2rem;
+    display: flex;
+    align-items: center;
+}
+#denglu>.center>.center-2>img{
+    width: 0.34rem;
+    height: 0.34rem;
+}
+#denglu>.center>.center-3{
+    position: absolute;
+    left: 6rem;
+    top: 5.5rem;
+    color: rgb(141, 137, 137);
+}
+#denglu>.center>.center-3>img{
+    width: 0.46rem;
+    height: 0.26rem;
+}
+#denglu>.section{
+    position: absolute;
+    top: 8.5rem;
+    left: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+#denglu>.section>.section-1{
+    width:2rem;
+    border-bottom: 1px solid gray;
+}
+#denglu>.section>.section-2{
+    width:2rem;
+    border-bottom: 1px solid gray;
+}
+#denglu>.section>p{
+    font-size: 0.27rem;
+    color: gray;
+}
+#denglu>.bottom{
+    width: 60%;
+    position: absolute;
+    top: 10rem;
+}
+#denglu>.bottom>ul{
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   position: absolute;
+   left: 1.4rem;
+}
+#denglu>.bottom>ul>li{
+    margin-left: 0.6rem;
+}
+#denglu>.bottom>ul>li>img{
+    width: 0.6rem;
+    height: 0.6rem;
+}
+#denglu>footer>a>img{
+    width: 100%;
+    height: 0.96rem;
+    position: absolute;
+    bottom: 0;
+}
+#denglu>.center>span:nth-of-type(1){
+    display: block;
+    font-size: 0.2rem;
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+}
+#denglu>.center>span:nth-of-type(2){
+    display: block;
+    font-size: 0.2rem;
+    margin-top: 1.2rem;
+    margin-left: 2rem;    
+}
+#denglu>.article{
+    font-size: 0.27rem;
+    color: rgb(184, 177, 177);
+    position: absolute;
+    top: 7.5rem;
+    left: 4.7rem;
+    border-bottom: 1px solid  rgb(184, 177, 177);
+  } 

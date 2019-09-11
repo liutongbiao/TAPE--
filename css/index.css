@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+   margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+html{
+    font-size: 100px;
+    background: white;
+}
+body{
+    font-size: 0.16rem;
+    font-family: 'PingFang-SC-Medium';
+    background: white;
+}
+ul{
+    list-style-type: none;
+}
+
+#boxindex .header{
+    height: 0.88rem;
+    padding: 0 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+#boxindex .header .icon{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+#boxindex .header .icon:nth-of-type(1){
+
+    background: url(../imgs/菜单@2x.png) no-repeat center;
+    background-size: 0.38rem auto;
+}
+#boxindex .header .icon:nth-of-type(2){
+    background: url(../imgs/搜索@2x.png) no-repeat center;
+    background-size: 0.39rem auto;
+}
+#boxindex .header p{
+    font-size: 0.34rem;
+    font-weight: 500;
+}
+#boxindex .header p.active{
+    font-size: 0.36rem;
+    font-weight: 600;
+    color:#ff5858;
+}
+
+#boxindex .banner{
+    height: 2.72rem;
+    background: url('../imgs/回忆里的事@2x.png') no-repeat center;
+    background-size:100%; 
+}
+#boxindex .maybelove{
+    padding: 0.4rem 0.3rem;
+    background: white;
+}
+#boxindex .maybelove ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#boxindex .maybelove ul li{
+    text-align: center;
+    font-size: 0.3rem;
+}
+#boxindex .maybelove ul li .one{
+    width: 1rem;
+    height: 0.77rem;
+    border-radius: 0.08rem;
+    margin: 0 auto 0.32rem;
+    overflow: hidden;
+}
+#boxindex .maybelove ul li .one img{
+    width: 100%;
+    height: 100%;
+}
+#boxindex .lunbo{
+    padding: 0 0.3rem;
+    background: white;
+}
+#boxindex .lunbo>p{
+    font-size: 0.32rem;
+    text-align: center;
+    padding:0.4rem 0 ;
+    font-weight: 500;
+}
+
+
+/* 轮播图 */
+#boxindex .lunbo .lunbotubox{
+    width: 6.9rem;
+    height: 2.33rem;
+    background-color: white;
+    position: relative;
+}
+
+#boxindex .lunbo .lunbotubox li {
+    height:2.33rem;
+    width:2.79rem;
+    /* background: red; */
+    position: absolute;
+    left: 0px;
+    top: 0;
+    border-radius: 0.1rem;
+}
+#boxindex .lunbo .lunbotubox li img{
+    height: 100%;
+    width: 100%;
+}
+
+#boxindex .lunbo .lunbotubox  ul li:nth-child(1) {
+    opacity: 1;
+    left: 30%;
+    z-index: 3;
+    transform: scale(1);
+    /* background: rgb(137, 226, 119); */
+}
+
+#boxindex .lunbo .lunbotubox  ul li:nth-child(2) {
+    opacity: 0.8;
+    left: 52%;
+    transform: scale(0.8);
+    z-index: 2;
+    /* background: rgb(240, 163, 75); */
+}
+
+#boxindex .lunbo .lunbotubox  ul li:nth-child(3) {
+    opacity: 0.6;
+    left: 68%;
+    transform: scale(0.6);
+    z-index: 1;
+    /* background: rgb(98, 101, 230); */
+}
+
+#boxindex .lunbo .lunbotubox  ul li:nth-child(4) {
+    opacity: 0.6;
+    left:-8%;
+    transform: scale(0.6);
+    z-index: 1;
+    /* background: rgb(81, 206, 228); */
+}
+
+#boxindex .lunbo .lunbotubox  ul li:nth-child(5) {
+    opacity: 0.8;
+    left: 8%;
+    transform: scale(0.8);
+    z-index: 2;
+}
+
+/* //新歌速递 */
+
+#boxindex .newsongexpress{
+    padding: 0.4rem 0.3rem 0rem;
+    background: white;
+}
+#boxindex .newsongexpress>h1{
+    font-size: 0.32rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.4rem 0;
+}
+#boxindex .newsongexpress .title{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#boxindex .newsongexpress .title li{
+    font-size: 0.3rem;
+    margin-right: 0.5rem;
+    color: rgb(102,102,102);
+}
+#boxindex .newsongexpress .title li:last-of-type{
+     position: absolute;
+     right: 0;
+     top: 0.05rem;
+     margin: 0;
+     width: 0.48rem;
+     height: 0.48rem;
+     background:url('../imgs/筛选@2x.png') no-repeat center;
+     background-size:auto 0.48rem; 
+}
+#boxindex .newsongexpress .title li.active{
+    color: rgb(255,88,88);
+    font-size: 0.3rem;
+}
+#boxindex .newsongexpress .songlists{
+    position: relative;
+}
+#boxindex .newsongexpress .songlists .newsonglists{
+    
+}
+#boxindex .newsongexpress .songlists .newsonglists li{
+    display: flex;
+    margin-top: 0.4rem;
+    align-items: center;
+    position: relative;
+}
+#boxindex .newsongexpress .songlists .newsonglists li .img{
+    width: 0.95rem;
+    height: 0.95rem;
+    overflow: hidden;
+    background-color: pink;
+    border-radius: 0.1rem;
+}
+#boxindex .newsongexpress .songlists .newsonglists li .img img{
+    width: 100%;
+    height: 100%;
+}
+#boxindex .newsongexpress .songlists .newsonglists li .text{
+    margin-left: 0.2rem;
+}
+#boxindex .newsongexpress .songlists .newsonglists li .text p:nth-child(1){
+    font-size: 0.28rem;
+    color: rgb(68,68,68);
+    margin-bottom: 0.14rem;
+}
+#boxindex .newsongexpress .songlists .newsonglists li .text p:nth-child(2){
+    font-size: 0.24rem;
+    color: rgb(68,68,68);
+}
+#boxindex .newsongexpress .songlists .newsonglists li>p{
+    width: 0.6rem;
+    position: absolute;
+    right:0;
+    top: 0;
+    height: 0.6rem;
+    background: url('../imgs/点点点@3x.png') no-repeat center;
+    background-size:auto 0.36rem; 
+}
+#boxindex .newsongexpress .knowmore{
+    text-align: right;
+    font-size: 0.22rem;
+    color: #666;
+    height: 0.6rem;
+    line-height: 0.65rem;
+    padding-right: 0.48rem;
+    background: url('../imgs/附近/附近的人@2x.png') no-repeat right center;
+    background-size:auto 0.48rem; 
+    
+}
+#boxindex .hotsongmv{
+    padding: 0.5rem 0.30rem 0;
+    margin-bottom: 1rem;
+    background: white;
+}
+#boxindex .hotsongmv h1{
+    text-align: center;
+    font-weight: 500;
+}
+#boxindex .hotsongmv .mv{
+    width: 6.9rem;
+    height: 3.27rem;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    margin-top: 0.4rem;
+}
+#boxindex .hotsongmv .mv img{
+    width: 100%;
+    height: 100%;
+}
+#boxindex .hotsongmv .pone{
+    font-size: 0.24rem;
+    color: rgb(255,88,88);
+    line-height: 0.6rem;
+}
+#boxindex .hotsongmv .ptwo{
+    font-size: 0.28rem;
+    color: rgb(51,51,51);
+}
+#boxindex .hotsongmv>div{
+    margin-bottom: 0.4rem;
+}
+
+
+
+.xuanfusong{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background:url('../imgs/bgc.png') no-repeat center;
+    background-size: auto 1rem;
+    overflow: hidden;
+}
+.xuanfusong .top{
+    height: 0.94rem;
+    display: flex;   
+    align-items: center;
+}
+.xuanfusong>.top>.img{
+    width: 0.93rem;
+    height: 0.93rem;
+}
+.xuanfusong>.top>.img>img{
+    width: 100%;
+    height: 100%;
+}
+.xuanfusong>.top>p{
+    height: 0.5rem;
+    width: 3.5rem;
+    line-height: 0.5rem;
+    margin-left: 0.1rem;
+    font-size: 0.24rem;
+}
+.xuanfusong>.top>.zongcorl{
+    flex: 1;
+    display: flex;   
+    align-items: center;
+    justify-content: space-around;
+}
+.xuanfusong>.top>.zongcorl>p{
+    width: 0.66rem;
+    height: 0.66rem;
+}
+.xuanfusong>.top>.zongcorl>p:nth-child(1){
+    background: url('../imgs/leftzong.png') no-repeat center;
+    background-size:0.3rem auto; 
+}
+.xuanfusong>.top>.zongcorl>p:nth-child(2){
+    background: url('../imgs/zantingzong.png') no-repeat center;
+    background-size:0.3rem auto; 
+}
+.xuanfusong>.top>.zongcorl>p:nth-child(3){
+    background: url('../imgs/rightzong.png') no-repeat center;
+    background-size:0.3rem auto; 
+}
+.xuanfusong .totalbgc{
+    height: 0.08rem;
+    width: 100%;
+    background-color: #EAC0A6;
+}
+.xuanfusong .totalbgc .nowbgc{
+    height: 0.08rem;
+    width:0;
+    background-color:#FF7157;
+}
+
+
+
+

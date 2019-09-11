@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no,minimum-scale=1.0">
+    <title>引导页</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/Guide-1.css">
+</head>
+<body>
+<!--引导页-->
+<div id="guidebox">
+
+<!--插入背景图-->
+    <div class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide wt">
+                <p>跳过</p>
+                <!--<img src="imgs/引导页1.png" alt="">-->
+            </li>
+            <li class="swiper-slide wt">
+                <p>跳过</p>
+                <!--<img src="imgs/引导页2.png" alt="">-->
+            </li>
+            <li class="swiper-slide ye">
+                <div class="dingwei">
+                    <div class="btn">
+                        <p class="tiaozhuce">注&nbsp;&nbsp;&nbsp;册</p>
+                        <p class="tiaodenglu">登&nbsp;&nbsp;&nbsp;录</p>
+                    </div>
+                    <!--点击进入-->
+                    <div class="jinru">
+                        <p><a href="./index.html">立即体验 <span>>></span></a></p>
+                    </div>
+
+                </div>
+
+            </li>
+
+
+        </ul>
+        <div class="swiper-pagination"> </div>
+
+    </div>
+
+    <div class="dingwei">
+
+    </div>
+
+</div>
+</body>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/toch.js"></script>
+<script>
+    $('#guidebox .tiaozhuce').on('tap',function(){
+        window.location.href='./zhuce.html';
+    })
+    $('#guidebox .tiaodenglu').on('tap',function(){
+        window.location.href='./denglu.html';
+    })
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize =function(){
+        setrem();
+    };
+
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,//可选选项，自动滑动
+        // loop:true,
+        pagination: {
+            el: '.swiper-pagination',
+
+        },
+    })
+</script>
+</html>

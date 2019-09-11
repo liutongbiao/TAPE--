@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background: white;
+
+}
+body{
+    font-size: 0.16rem;
+}
+#search{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+/*搜索头部*/
+#search .searchheader{
+
+  display: flex;
+ justify-content: space-around;
+ height: 0.73rem;
+ align-items: center;
+ margin-top: 0.3rem;
+ margin-bottom: 0.58rem;
+}
+/*图标*/
+#search .searchheader p{
+    height: 0.7rem;
+    width: 0.7rem;
+    background: url('../imgs/back.png') no-repeat center;
+    background-size:0.2rem auto; 
+
+}
+/*搜索框*/
+#search .searchheader input{
+    width: 5.72rem;
+    height: 0.73rem;
+    line-height: 0.73rem;
+    font-size: 0.28rem;
+    color: rgb(144,144,144);
+    border: none;
+    outline: none;
+    border-bottom: grey 1px solid;
+   padding-bottom: 0.1rem;
+}
+#search .searchheader input::placeholder{
+    font-size: 0.28rem;
+    color: rgb(144,144,144);
+}
+#search .searchheader .fangkuai{
+    height: 0.7rem;
+    width: 0.7rem;
+    background: url('../imgs/语音@2x.png') no-repeat center;
+    background-size:0.3rem auto; 
+ 
+}
+/*热门搜索*/
+#search .renmensearch{
+    padding: 0 0.3rem;
+    margin: auto;
+    /* display: none; */
+}
+#search .renmensearch div{
+    font-size: 0.32rem;
+    margin-top: 0.25rem;
+}
+
+#search .renmensearch div:nth-child(1){
+    height: 0.34rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#search .renmensearch div:nth-child(2){
+    margin-left: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#search .renmensearch>div:nth-child(2)>p{
+    font-size: 0.28rem;    
+    padding:0.2rem 0.2rem;
+    color: rgb(79,79,79);
+}
+#search .renmensearch .hotsearch>p:nth-child(2){
+    background: url('../imgs/歌手@2x.png') no-repeat center;
+    background-size: auto 0.32rem;
+    width: 0.34rem;
+    height: 0.34rem;
+}
+#search .renmensearch .lishisearch>p:nth-child(2){
+    background: url('../imgs/删除@2x.png') no-repeat center;
+    background-size: auto 0.32rem;
+    width: 0.34rem;
+    height: 0.34rem;
+}
+#search .two{
+    margin-top: 0.5rem;
+}
+
+#search section{
+    padding: 0 0.3rem;
+    margin-top: -0.46rem;
+    display: none;
+}
+#search section nav{
+    height: 1.16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.28rem;
+}
+#search section nav .active{
+    font-size: 0.3rem;
+    color: #ff5858;
+}
+#search section .header{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.28rem;
+}
+#search section .header .left{
+    width: 1.72rem;
+    background: url('../imgs/star.png') no-repeat left center;
+    background-size: 0.4rem auto;
+    text-align: right;
+}
+#search section .header .right{
+    width: 1.1rem;
+    text-align: right;
+    background: url('../imgs/duoxuanlist.png') no-repeat left center;
+    background-size: 0.29rem auto;
+}
+#search section .songlist{
+   margin-top: 0.2rem;
+   height: 10rem;
+   overflow-y: auto;
+}
+#search section .songlist li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.12rem;
+    font-size: 0.32rem;
+}
+#search section .songlist li:last-of-type{
+    margin-bottom: 0.6rem;
+}
+#search section .songlist li .left .songname{
+    font-size: 0.3rem;
+    color: #333;
+}
+#search section .songlist li .left .singer{
+    font-size: 0.26rem;
+    color: #ff5858;
+}
+#search section .songlist li .right{
+    width: 0.8rem;
+    height: 0.6rem;
+    background: url('../imgs/listmv.png') no-repeat left center,url('../imgs/listmore.png') no-repeat right center;
+    background-size:auto 0.36rem; 
+}
+
+.xuanfusong{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #f5d4d4;
+    overflow: hidden;
+}
+.xuanfusong .top{
+    height: 0.94rem;
+    display: flex;   
+    align-items: center;
+}
+.xuanfusong>.top>.img{
+    width: 0.93rem;
+    height: 0.93rem;
+}
+.xuanfusong>.top>.img>img{
+    width: 100%;
+    height: 100%;
+}
+.xuanfusong>.top>p{
+    height: 0.5rem;
+    width: 3.5rem;
+    line-height: 0.5rem;
+    margin-left: 0.1rem;
+    font-size: 0.24rem;
+}
+.xuanfusong>.top>.zongcorl{
+    flex: 1;
+    display: flex;   
+    align-items: center;
+    justify-content: space-around;
+}
+.xuanfusong>.top>.zongcorl>p{
+    width: 0.66rem;
+    height: 0.66rem;
+}
+.xuanfusong>.top>.zongcorl>p:nth-child(1){
+    background: url('../imgs/leftzong.png') no-repeat center;
+    background-size:0.3rem auto; 
+}
+.xuanfusong>.top>.zongcorl>p:nth-child(2){
+    background: url('../imgs/zantingzong.png') no-repeat center;
+    background-size:0.3rem auto; 
+}
+.xuanfusong>.top>.zongcorl>p:nth-child(3){
+    background: url('../imgs/rightzong.png') no-repeat center;
+    background-size:0.3rem auto; 
+}
+.xuanfusong .totalbgc{
+    height: 0.08rem;
+    width: 100%;
+    background-color: #EAC0A6;
+}
+.xuanfusong .totalbgc .nowbgc{
+    height: 0.08rem;
+    width:0;
+    background-color:#FF7157;
+}

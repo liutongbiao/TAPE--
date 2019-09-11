@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    /* background: url("./zhuce.img/b4fb7cd05d67f524cf9f467930ea4295.gif") no-repeat; */
+    background-size: 100%;
+}
+html{
+    font-size: 100px;
+}  
+#zhuce{
+    width: 100%;
+    height: 100%;
+}
+#zhuce>img{
+    display: block;
+    width: 1.7rem;
+    height: 1.35rem; 
+    margin: 2rem auto; 
+}
+
+#zhuce>.center>input:nth-of-type(1){
+    width: 5rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 0.8rem;
+    border: 0px;
+    border-bottom: 0.1px solid rgb(109, 106, 106);
+    padding-left: 0.8rem;
+    color:blue;
+    font-size: 0.2rem;
+    outline: none;
+}
+#zhuce>.center>input:nth-of-type(2){
+    width: 5rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 6rem;
+    left: 0.8rem;
+    border: 0px;
+    border-bottom: 0.1px solid rgb(109, 106, 106);
+    padding-left: 0.8rem;
+    color: blue;
+    font-size: 0.2rem;
+    outline: none;
+}
+#zhuce>.center>.center-1{
+    font-size: 0.3rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.9rem;
+    top: 4.7rem;
+
+}
+#zhuce>.center>.center-1>img{
+    width: 0.25rem;
+    height: 0.38rem;
+}
+#zhuce>.center>.center-2{
+    font-size: 0.3rem;
+    position: absolute;
+    left: 0.9rem;
+    top: 6.2rem;
+    display: flex;
+    align-items: center;
+}
+#zhuce>.center>.center-2>img{
+    width: 0.34rem;
+    height: 0.34rem;
+}
+#zhuce>.center>.center-3{
+    font-size: 0.28rem;
+    position: absolute;
+    left: 5rem;
+    top: 6.2rem;
+    color: rgb(141, 137, 137);
+}
+#zhuce>.section{
+    position: absolute;
+    top: 8.5rem;
+    left: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+#zhuce>.section>.section-1{
+    width:2rem;
+    border-bottom: 1px solid gray;
+}
+#zhuce>.section>.section-2{
+    width:2rem;
+    border-bottom: 1px solid gray;
+}
+#zhuce>.section>p{
+    font-size: 0.28rem;
+    color: gray;
+}
+#zhuce>.bottom{
+    width: 60%;
+    position: absolute;
+    top: 10rem;
+}
+#zhuce>.bottom>ul{
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   position: absolute;
+   left: 1.4rem;
+}
+#zhuce>.bottom>ul>li{
+    margin-left: 0.6rem;
+}
+#zhuce>.bottom>ul>li>img{
+    width: 0.6rem;
+    height: 0.6rem;
+}
+#zhuce>footer>a>img{
+    width: 100%;
+    height: 0.96rem;
+    position: absolute;
+    bottom: 0;
+}
+#zhuce>.center>span:nth-of-type(1){
+    display: block;
+    font-size: 0.2rem;
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+}
+#zhuce>.center>span:nth-of-type(2){
+    display: block;
+    font-size: 0.2rem;
+    margin-top: 1.2rem;
+    margin-left: 2rem;    
+}

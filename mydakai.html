@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no,minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/mydakai.css">
+</head>
+
+<body>
+    <div id="mycebianlan">
+        <div id="mydakai">
+            <!--扫一扫-->
+            <div class="imgs"><img src="imgs/我的打开/扫一扫@2x.png" alt=""></div>
+            <!--头像-->
+            <div class="imgs1">
+                <img src="imgs/我的打开/头像@2x.png" alt="">
+                <div class="texthk">
+                    <p>飞翔的小可爱</p>
+                    <span>Lv.7</span>
+                </div>
+                <div class="imgs2">
+                    <img src="imgs/我的打开/签到@2x.png" alt="">
+                </div>
+            </div>
+            <!--菜单栏-->
+            <div class="ulst1">
+                <ul>
+                    <li><img src="imgs/我的打开/我的消息@2x.png" alt="">
+                        <p>我的消息</p>
+                    </li>
+                    <li>
+                        <img src="imgs/我的打开/我的好友@2x.png" alt="">
+                        <p>我的好友</p>
+                    </li>
+                    <li>
+                        <img src="imgs/我的打开/听歌识曲@2x.png" alt="">
+                        <p>听歌识曲</p>
+                    </li>
+                    <li>
+                        <img src="imgs/我的打开/会员中心@2x.png" alt="">
+                        <p>会员中心</p>
+                    </li>
+                </ul>
+
+            </div>
+            <!--设置列表-->
+            <div class="kiref">
+                <div>
+                    <img src="imgs/我的打开/个性换肤@2x.png" alt="">
+                    <span>个性换肤</span>
+                </div>
+                <div>
+                    <img src="imgs/我的打开/定时开关@2x.png" alt="">
+                    <span class="d">定时开关</span>
+                </div>
+                <div>
+                    <img src="imgs/我的打开/音乐闹铃@2x.png" alt="">
+                    <span class="d">音乐闹铃</span>
+                </div>
+                <div>
+                    <img src="imgs/我的打开/夜间模式@2x.png" alt="">
+                    <span class="d">夜间模式</span>
+                </div>
+
+                <div>
+                    <img src="imgs/我的打开/帮助与反馈@2x.png" alt="">
+                    <span class="d">帮助与反馈</span>
+                </div>
+                <div>
+                    <img src="imgs/我的打开/关于@2x.png" alt="">
+                    <span class="d">关于</span>
+                </div>
+                <div>
+                    <img src="imgs/我的打开/设置@2x.png" alt="">
+                    <span class="d">设置</span>
+                </div>
+                <div>
+                    <img src="imgs/我的打开/退出@2x.png" alt="">
+                    <span class="d">退出</span>
+                </div>
+            </div>
+        </div>
+        <div class="cebianlanzhezhao"></div>
+    </div>
+    <!--你的打开-->
+
+</body>
+<!-- <script src="js/zepto.min.js"></script> -->
+<script src="https://liutongbiao.github.io/js/zepto.js"></script>
+<script>
+    $('#mycebianlan .cebianlanzhezhao').on('tap',function(){
+        $(this).hide();
+        $('#mydakai').animate({transform:'translateX(-6.2rem)'},500,function(){
+            $(this).hide();
+        });
+        
+    })
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+</script>
+
+</html>

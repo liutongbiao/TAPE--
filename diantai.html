@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no,minimum-scale=1.0">
+    <title>电台</title>
+    <link rel="stylesheet" href="css/diantai.css">
+</head>
+<body>
+<!--电台-->
+<div id="diantai">
+    <!--版心-->
+    <div class="banxin">
+        <div class="header">
+              <p class="tiaoshouye">
+                <img src="./imgs/back.png" alt="">
+              </p>
+            <p>TAPE电台</p>
+            <p></p>
+        </div>
+        <!--背景banner图-->
+        <div class="banner">
+            <!--搜索详情-->
+            <div class="inp"><input type="text"placeholder="国漫专题"></div>
+            <!-- <span><img src="imgs/搜索@2x.png" alt=""width="15"height="15"></span> -->
+        </div>
+            <!--导航栏-->
+        <div class="ulst">
+            <ul>
+                <li>热门</li>
+                <li>广播剧</li>
+                <li>情感</li>
+                <li>FM</li>
+                <li>场景</li>
+                <li>语种</li>
+            </ul>
+        </div>
+        <!--24小时榜-->
+        <div class="hous">
+            <p>24小时榜</p>
+            <ul>
+                <li>
+                    <img src="imgs/洞见官方播客@2x.png" alt="">
+                </li>
+                <li>
+                    <img src="imgs/祸祸民谣咖啡馆@2x.png" alt="">
+                </li>
+                <li>
+                    <img src="imgs/杉果电台@2x.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <!--热门主播-->
+        <div class="remenzhubo">
+            <p>热门主播</p>
+            <!--内容-->
+            <div class="zhubonierong">
+                <!--数字-->
+                <div class="shuzi">
+                    <img class="imk" src="imgs/1.png" alt="">
+                    <img class="immg1" src="imgs/派大星@2x.png" alt="">
+                    <p>派大你星了个星的星哥</p>
+                </div>
+<!--火苗-->
+               <div class="huomiao">
+                   <img src="imgs/火苗@2x.png" alt="">
+                   <span>9684K</span>
+               </div>
+            </div>
+            <div class="zhubonierong">
+                <!--数字-->
+                <div class="shuzi">
+                    <img class="imk" src="imgs/2.png" alt="">
+                    <img class="immg1" src="imgs/好了啸了天@2x.png" alt="">
+                    <p>好了啸了天</p>
+                </div>
+                <!--火苗-->
+                <div class="huomiao">
+                    <img src="imgs/火苗@2x.png" alt="">
+                    <span>8462K</span>
+                </div>
+            </div>
+            <div class="zhubonierong">
+                <!--数字-->
+                <div class="shuzi">
+                    <img class="imk" src="imgs/3.png" alt="">
+                    <img class="immg1" src="imgs/小当家@2x.png" alt="">
+                    <p>小当家</p>
+                </div>
+                <!--火苗-->
+                <div class="huomiao">
+                    <img src="imgs/火苗@2x.png" alt="">
+                    <span>6513K</span>
+                </div>
+            </div>
+            <div class="zhubonierong">
+                <!--数字-->
+                <div class="shuzi">
+                    <img class="imk" src="imgs/4.png" alt="">
+                    <img class="immg1" src="imgs/半坛醋@2x.png" alt="">
+                    <p>半坛醋</p>
+                </div>
+                <!--火苗-->
+                <div class="huomiao">
+                    <img src="imgs/火苗@2x.png" alt="">
+                    <span>6427K</span>
+                </div>
+            </div>
+            <div class="zhubonierong">
+                <!--数字-->
+                <div class="shuzi">
+                    <img class="imk" src="imgs/5.png" alt="">
+                    <img class="immg1" src="imgs/阿啾@2x.png" alt="">
+                    <p>阿啾啾啾啾</p>
+                </div>
+                <!--火苗-->
+                <div class="huomiao">
+                    <img src="imgs/火苗@2x.png" alt="">
+                    <span>8462K</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+
+</div>
+</body>
+<script src="js/zepto.min.js"></script>
+<script>
+      $('#diantai .tiaoshouye').on('tap', function () {
+        window.location.href='index.html';
+    })
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize =function(){
+        setrem();
+    };
+
+
+
+</script>
+</html>

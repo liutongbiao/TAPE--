@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+#funjindongtai .header{
+    height: 0.88rem;
+    padding: 0 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+#funjindongtai .header .icon{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+#funjindongtai .header .icon:nth-of-type(1){
+
+    background: url(../imgs/菜单@2x.png) no-repeat center;
+    background-size: 0.38rem auto;
+}
+#funjindongtai .header .icon:nth-of-type(2){
+    background: url(../imgs/搜索@2x.png) no-repeat center;
+    background-size: 0.39rem auto;
+}
+#funjindongtai .header p{
+    font-size: 0.34rem;
+    font-weight: 500;
+}
+#funjindongtai .header p.active{
+    font-size: 0.36rem;
+    font-weight: 600;
+    color: #ff5858;
+}
+#faxian{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: white;
+}
+#faxian .fujin{
+    display: flex;
+    justify-content: center;
+
+
+}
+#faxian .fujin p{
+    color: black;
+    font-size: 0.32rem;
+    padding: 0.5rem;
+}
+#faxian .fujin p:nth-of-type(2){
+    color: #ff5858;
+}
+/*评论*/
+#faxian .pinglun{
+ padding-left: 0.3rem;
+    display: flex;
+
+}
+/*图片*/
+
+#faxian .pinglun .imgs{
+display: flex;
+}
+#faxian .pinglun .imgs img{
+    width: 0.82rem;
+    height: 0.82rem;
+}
+/*字体*/
+#faxian .pinglun .imgs .text{
+    margin-left: -0.1rem;
+}
+#faxian .pinglun .imgs .text p{
+    padding-left: 0.2rem;
+}
+#faxian .pinglun .imgs .text p:nth-of-type(1){
+    font-size: 0.28rem;
+}
+#faxian .pinglun .imgs .text p:nth-of-type(2){
+    font-size: 0.24rem;
+    color: grey;
+}
+#faxian .imgs2{
+    margin-top: -0.7rem;
+    margin-left: 3.45rem;
+}
+#faxian .imgs2 img{
+
+    width: 0.3rem; 
+}
+#faxian .tg{
+    margin-left: 4rem;
+}
+    /*播放内容*/
+#faxian .bofa{
+   padding-left: 1.25rem;
+    margin-top: 0.3rem;
+}
+/*字体*/
+#faxian .bofa p{
+    font-size: 0.28rem;
+
+}
+#faxian .bofa .tup{
+    width: 5.03rem;
+    height: 3.19rem;
+    border-radius: 0.2rem;
+    padding-top: 0.20rem;
+}
+#faxian .bofa .tup img {
+    width: 5.03rem;
+    height: 3.19rem;
+}
+/*点赞*/
+#faxian .bofa .dianzan{
+display: flex;
+  justify-content: space-around;
+   margin-left: -0.35rem;
+    margin-top: 0.25rem;
+}
+#faxian .bofa .dianzan div{
+    color: grey;
+    display: flex;
+}
+#faxian .bofa .dianzan div img{
+    width: 0.32rem;
+    height: 0.27rem;
+    margin-top: 0.05rem;
+}
+#faxian .bofa .dianzan div p{
+    margin-left: 0.1rem;font-size: 0.24rem;
+    margin-top: 0.01rem;
+}
+#faxian .bofa .dianzan div .gg{
+    width: 0.28rem;
+    height: 0.28rem;
+}
+#faxian .bofa .dianzan div .ping{
+    width: 0.28rem;
+    height: 0.28rem;
+}
+#faxian .ulse{
+    margin-top: 0.75rem;
+}
+#faxian .bofa .xiaoma{
+    display: flex;
+    padding-top: 0.23rem;
+}
+#faxian .bofa .xiaoma img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+#faxian .bofa .xiaoma div{
+    padding-left: 0.15rem;
+}
+#faxian .bofa .xiaoma div p:nth-of-type(1){
+    font-size: 0.28rem;
+}
+#faxian .bofa .xiaoma div p:nth-of-type(2){
+    font-size: 0.24rem;
+    color: grey;
+}

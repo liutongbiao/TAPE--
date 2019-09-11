@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no,minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://liutongbiao.github.io/js/animate.css">
+</head>
+
+<body>
+
+    <div id="search">
+        <!--搜索头部-->
+        <div class="searchheader">
+            <p class="back"></p>
+            <input type="text" placeholder="搜索音乐、歌词、歌单" id="input">
+            <div class="fangkuai"></div>
+        </div>
+        <!--热门搜索-->
+        <div class="renmensearch animated">
+            <div class="hotsearch">
+                <p>热门搜索</p>
+                <p></p>
+            </div>
+            <div>
+                <p>新歌速递</p>
+                <p>迪丽热巴</p>
+                <p>三生三世十里桃花</p>
+                <p>陈奕迅</p>
+                <p>周杰伦</p>
+            </div>
+        </div>
+        <!--历史搜索-->
+        <div class="renmensearch two animated">
+            <div class="lishisearch">
+                <p>搜索历史</p>
+                <p class="remove"></p>
+            </div>
+            <div class="lishicucun"> </div>
+        </div>
+
+        <!-- 所搜列表 -->
+
+        <section class="animated">
+            <nav>
+                <p class="active">单曲</p>
+                <p>专辑</p>
+                <p>视频</p>
+                <p>歌手</p>
+                <p>歌单</p>
+                <p>电台</p>
+            </nav>
+            <div class="header">
+                <div class="left">播放全部</div>
+                <div class="right">多选</div>
+            </div>
+            <ul class="songlist">
+                <li>所搜中...</li>
+            </ul>
+        </section>
+        <div class="xuanfusong">
+                <div class="top">
+                    <div class="img"> <img src="./imgs/mok.png" alt=""></div>          
+                    <p><marquee>sklfglsfnglsfgnjsfgnksfjnsfjkgn</marquee></p>
+                    <div class="zongcorl">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div> 
+                <div class="totalbgc">
+                    <div class="nowbgc"></div>
+                </div>
+            </div>
+    </div>
+  
+</body>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/jq.js"></script>
+<script src="./js/search.js"></script>
+
+<script>
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize = function () {
+        setrem();
+    };
+</script>
+
+</html>

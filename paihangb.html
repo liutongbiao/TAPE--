@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no,minimum-scale=1.0">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="css/paihangb.css">
+</head>
+<body>
+<!--排行榜-->
+  <div id=paihangb>
+      <div class="phb">
+          <img src="imgs/排行榜/返回@2x.png" alt="" class="tiaoshouye">
+           <p>排行榜</p>
+           <p></p>
+      </div>
+      <!--背景-->
+      <div class="bj"><img src="imgs/排行榜/Tape音乐巅峰榜单@2x.png" alt=""></div>
+       <!--图片内容-->
+      <div class="tupianneirong">
+          <img src="imgs/排行榜/飙升@2x.png" alt="">
+             <!--文字字体-->
+          <div class="wenzi">
+             <p>Tape飙升榜</p>
+              <p><span>1</span> 肖战-兀傲</p>
+              <p><span>2</span> 新旭-凤舞九天</p>
+              <p><span>3</span> 虎二-你一定要幸福</p>
+
+             </div>
+       </div>
+      <div class="tupianneirong tu2">
+          <img src="imgs/排行榜/畅销@2x.png" alt="">
+          <!--文字字体-->
+          <div class="wenzi">
+              <p>Tape专辑畅销榜</p>
+              <p><span>1</span> 兔子牙-春江花月</p>
+              <p><span>2</span> 太一-Lutra</p>
+              <p><span>3</span> 大欢-多年以后</p>
+
+          </div>
+
+      </div>
+      <div class="tupianneirong tu2">
+          <img src="imgs/排行榜/新歌@2x.png" alt="">
+          <!--文字字体-->
+          <div class="wenzi">
+              <p>Tape新歌榜</p>
+              <p><span>1</span> 梁月-出现又离开</p>
+              <p><span>2</span> 苏苏-撕夜</p>
+              <p><span>3</span> 太妍-遇见</p>
+
+          </div>
+
+
+  </div>
+      <div class="tupianneirong tu2">
+          <img src="imgs/排行榜/网络红歌@2x.png" alt="">
+          <!--文字字体-->
+          <div class="wenzi">
+              <p>网络红歌榜</p>
+              <p><span>1</span> 梦涵-17岁</p>
+              <p><span>2</span> 一颗小草-多年以后</p>
+              <p><span>3</span> 司徒申-江湖</p>
+
+          </div>
+
+      </div>
+
+      <div class="tupianneirong tu2">
+          <img src="imgs/排行榜/DJ热歌@2x.png" alt="">
+          <!--文字字体-->
+          <div class="wenzi">
+              <p>DJ热歌榜</p>
+              <p><span>1</span> 贺磊-我们总是</p>
+              <p><span>2</span> 斯达王-唯你之光</p>
+              <p><span>3</span> 贱贱-归来</p>
+
+          </div>
+
+  </div>
+
+      <!--加载更多-->
+      <div class="jiazai">
+          <p>加载更多</p>
+          <img src="imgs/排行榜/加载更多@2x.png" alt="">
+      </div>
+      </div>
+</body>
+<script src="js/zepto.min.js"></script>
+<script>
+    $('#paihangb .tiaoshouye').on('tap',function(){
+        history.back();
+    })
+    function setrem() {
+        var windowwidth = window.innerWidth;
+        var newpx = (windowwidth / 750) * 100;
+        $('html').css('fontSize', newpx);
+    }
+    setrem();
+    window.onresize =function(){
+        setrem();
+    };
+</script>
+</html>
